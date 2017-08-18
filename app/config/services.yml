@@ -20,12 +20,3 @@ services:
             $resourceDirectory: '%kernel.root_dir%/../src/AppBundle/Resources/'
         tags: ['controller.service_arguments']
         public: true
-
-    AppBundle\Transformer\FacebookMessageTransformer:
-        tags:
-            -  { name: 'message.transformer', alias: 'facebook' }
-
-    AppBundle\Transformer\TwitterMessageTransformer:
-        tags:
-            -  { name: 'message.transformer', alias: 'twitter' }
-
