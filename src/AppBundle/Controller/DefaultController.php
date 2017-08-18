@@ -34,7 +34,7 @@ class DefaultController extends AbstractController
      *
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function indexAction(JsonFileLoader $jsonFileLoader, TransformerChain $transformerChain)
+    public function indexAction(JsonFileLoader $jsonFileLoader)
     {
         $facebookItems = $jsonFileLoader->loadResource($this->resourceDirectory.'facebook.json');
         $twittersItems = $jsonFileLoader->loadResource($this->resourceDirectory.'twitter.json');
