@@ -48,11 +48,4 @@ class AppKernel extends Kernel
     {
         $loader->load($this->getRootDir().'/config/config_'.$this->getEnvironment().'.yml');
     }
-
-    public function build(\Symfony\Component\DependencyInjection\ContainerBuilder $container)
-    {
-        parent::build($container);
-
-        $container->addCompilerPass(new \AppBundle\DependencyInjection\Compiler\TransformerCompilerPass());
-    }
 }
