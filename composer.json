@@ -35,8 +35,6 @@
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
-        "doctrine/doctrine-fixtures-bundle": "^2.3",
-        "fzaninotto/faker": "^1.6",
         "sensio/generator-bundle": "^3.0",
         "symfony/phpunit-bridge": "^3.0"
     },
@@ -54,8 +52,7 @@
             "php bin/console doctrine:fixtures:load"
         ],
         "post-install-cmd": [
-            "@symfony-scripts",
-            "@doctrine-install"
+            "@symfony-scripts"
         ],
         "post-update-cmd": [
             "@symfony-scripts"
